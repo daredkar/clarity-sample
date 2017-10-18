@@ -1,0 +1,39 @@
+<!-- <div class="modal">
+    <div class="modal-dialog modal-lg" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <form>
+                <section class="form-block">
+                    <label>Register the Customer</label>
+                    <div class="form-group row">
+                        <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                            <label for="gForm_1">Name :</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <input class="form-control" type="text" id="gForm_1" placeholder="Enter name here" size="45">
+                        </div>
+                        <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                          <label for="gForm_1">Another field :</label>
+                      </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <input class="form-control" type="password" id="gForm_2" placeholder="Enter another value here" size="35">
+                        </div>
+                    </div>
+              
+                    <button type="submit" class="btn btn-primary">Button</button>
+                </section>
+              </form>
+        </div>
+    </div>
+</div> -->
+<div class="modal-backdrop" aria-hidden="true"></div>
+<clr-modal [(clrModalOpen)]="opened" [clrModalClosable]="false">
+    <h3 class="modal-title">No "x" in the top-right corner</h3>
+    <div class="modal-body">
+        <p>Clicking on the backdrop doesn't do anything.</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="opened = false">
+            I'm the only way to close the modal!
+        </button>
+    </div>
+</clr-modal>
